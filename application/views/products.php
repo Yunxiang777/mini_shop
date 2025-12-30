@@ -4,7 +4,8 @@
         <div class="col-md-4 mb-4">
             <div class="card">
                 <?php if ($product->image): ?>
-                    <img src="<?= base_url('uploads/' . $product->image) ?>" class="card-img-top" alt="<?= $product->name ?>">
+                    <img src="<?= base_url('uploads/' . $product->image) ?>" class="card-img-top img-fluid"
+                        style="height:220px; object-fit:cover;">
                 <?php endif; ?>
                 <div class="card-body">
                     <h5 class="card-title"><?= $product->name ?></h5>

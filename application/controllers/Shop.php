@@ -54,14 +54,14 @@ class Shop extends CI_Controller
     {
         $data = $this->input->post('cart');
         $this->cart->update($data);
-        redirect('cart');
+        redirect('shop/cart');
     }
 
     // 清空購物車
     public function clear_cart()
     {
         $this->cart->destroy();
-        redirect('cart');
+        redirect('shop/cart');
     }
 
     // 結帳頁面

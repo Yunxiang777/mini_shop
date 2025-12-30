@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('cart') ?>">
+                    <a class="nav-link" href="<?= base_url('shop/cart') ?>">
                         購物車 (<?= $this->cart->total_items() ?> 件)
                     </a>
                 </li>
